@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B35D6071B443E7D00D5052F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6061B443E7D00D5052F /* main.m */; };
+		5B35D60A1B443E7D00D5052F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6091B443E7D00D5052F /* AppDelegate.m */; };
+		5B35D60D1B443E7D00D5052F /* iOSCaelum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D60B1B443E7D00D5052F /* iOSCaelum.xcdatamodeld */; };
+		5B35D6101B443E7D00D5052F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D60F1B443E7D00D5052F /* ViewController.m */; };
+		5B35D6131B443E7D00D5052F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6111B443E7D00D5052F /* Main.storyboard */; };
+		5B35D6151B443E7D00D5052F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6141B443E7D00D5052F /* Images.xcassets */; };
+		5B35D6181B443E7D00D5052F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6161B443E7D00D5052F /* LaunchScreen.xib */; };
+		5B35D6241B443E7D00D5052F /* iOSCaelumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B35D61E1B443E7D00D5052F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B35D5F91B443E7D00D5052F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B35D6001B443E7D00D5052F;
+			remoteInfo = iOSCaelum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B35D6011B443E7D00D5052F /* iOSCaelum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCaelum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B35D6051B443E7D00D5052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B35D6061B443E7D00D5052F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B35D6081B443E7D00D5052F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B35D6091B443E7D00D5052F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B35D60C1B443E7D00D5052F /* iOSCaelum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSCaelum.xcdatamodel; sourceTree = "<group>"; };
+		5B35D60E1B443E7D00D5052F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B35D60F1B443E7D00D5052F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B35D6121B443E7D00D5052F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B35D6141B443E7D00D5052F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5B35D6171B443E7D00D5052F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5B35D61D1B443E7D00D5052F /* iOSCaelumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCaelumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B35D6221B443E7D00D5052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSCaelumTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B35D5FE1B443E7D00D5052F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B35D61A1B443E7D00D5052F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B35D5F81B443E7D00D5052F = {
+			isa = PBXGroup;
+			children = (
+				5B35D6031B443E7D00D5052F /* iOSCaelum */,
+				5B35D6201B443E7D00D5052F /* iOSCaelumTests */,
+				5B35D6021B443E7D00D5052F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B35D6021B443E7D00D5052F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B35D6011B443E7D00D5052F /* iOSCaelum.app */,
+				5B35D61D1B443E7D00D5052F /* iOSCaelumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B35D6031B443E7D00D5052F /* iOSCaelum */ = {
+			isa = PBXGroup;
+			children = (
+				5B35D6081B443E7D00D5052F /* AppDelegate.h */,
+				5B35D6091B443E7D00D5052F /* AppDelegate.m */,
+				5B35D60E1B443E7D00D5052F /* ViewController.h */,
+				5B35D60F1B443E7D00D5052F /* ViewController.m */,
+				5B35D6111B443E7D00D5052F /* Main.storyboard */,
+				5B35D6141B443E7D00D5052F /* Images.xcassets */,
+				5B35D6161B443E7D00D5052F /* LaunchScreen.xib */,
+				5B35D60B1B443E7D00D5052F /* iOSCaelum.xcdatamodeld */,
+				5B35D6041B443E7D00D5052F /* Supporting Files */,
+			);
+			path = iOSCaelum;
+			sourceTree = "<group>";
+		};
+		5B35D6041B443E7D00D5052F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B35D6051B443E7D00D5052F /* Info.plist */,
+				5B35D6061B443E7D00D5052F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B35D6201B443E7D00D5052F /* iOSCaelumTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */,
+				5B35D6211B443E7D00D5052F /* Supporting Files */,
+			);
+			path = iOSCaelumTests;
+			sourceTree = "<group>";
+		};
+		5B35D6211B443E7D00D5052F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B35D6221B443E7D00D5052F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B35D6001B443E7D00D5052F /* iOSCaelum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B35D6271B443E7D00D5052F /* Build configuration list for PBXNativeTarget "iOSCaelum" */;
+			buildPhases = (
+				5B35D5FD1B443E7D00D5052F /* Sources */,
+				5B35D5FE1B443E7D00D5052F /* Frameworks */,
+				5B35D5FF1B443E7D00D5052F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSCaelum;
+			productName = iOSCaelum;
+			productReference = 5B35D6011B443E7D00D5052F /* iOSCaelum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B35D61C1B443E7D00D5052F /* iOSCaelumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B35D62A1B443E7D00D5052F /* Build configuration list for PBXNativeTarget "iOSCaelumTests" */;
+			buildPhases = (
+				5B35D6191B443E7D00D5052F /* Sources */,
+				5B35D61A1B443E7D00D5052F /* Frameworks */,
+				5B35D61B1B443E7D00D5052F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B35D61F1B443E7D00D5052F /* PBXTargetDependency */,
+			);
+			name = iOSCaelumTests;
+			productName = iOSCaelumTests;
+			productReference = 5B35D61D1B443E7D00D5052F /* iOSCaelumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B35D5F91B443E7D00D5052F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Caelum;
+				TargetAttributes = {
+					5B35D6001B443E7D00D5052F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					5B35D61C1B443E7D00D5052F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 5B35D6001B443E7D00D5052F;
+					};
+				};
+			};
+			buildConfigurationList = 5B35D5FC1B443E7D00D5052F /* Build configuration list for PBXProject "iOSCaelum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B35D5F81B443E7D00D5052F;
+			productRefGroup = 5B35D6021B443E7D00D5052F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B35D6001B443E7D00D5052F /* iOSCaelum */,
+				5B35D61C1B443E7D00D5052F /* iOSCaelumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B35D5FF1B443E7D00D5052F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B35D6131B443E7D00D5052F /* Main.storyboard in Resources */,
+				5B35D6181B443E7D00D5052F /* LaunchScreen.xib in Resources */,
+				5B35D6151B443E7D00D5052F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B35D61B1B443E7D00D5052F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B35D5FD1B443E7D00D5052F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B35D60A1B443E7D00D5052F /* AppDelegate.m in Sources */,
+				5B35D60D1B443E7D00D5052F /* iOSCaelum.xcdatamodeld in Sources */,
+				5B35D6101B443E7D00D5052F /* ViewController.m in Sources */,
+				5B35D6071B443E7D00D5052F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B35D6191B443E7D00D5052F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B35D6241B443E7D00D5052F /* iOSCaelumTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B35D61F1B443E7D00D5052F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B35D6001B443E7D00D5052F /* iOSCaelum */;
+			targetProxy = 5B35D61E1B443E7D00D5052F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B35D6111B443E7D00D5052F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B35D6121B443E7D00D5052F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B35D6161B443E7D00D5052F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B35D6171B443E7D00D5052F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B35D6251B443E7D00D5052F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B35D6261B443E7D00D5052F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B35D6281B443E7D00D5052F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSCaelum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B35D6291B443E7D00D5052F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iOSCaelum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5B35D62B1B443E7D00D5052F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSCaelumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCaelum.app/iOSCaelum";
+			};
+			name = Debug;
+		};
+		5B35D62C1B443E7D00D5052F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSCaelumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSCaelum.app/iOSCaelum";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B35D5FC1B443E7D00D5052F /* Build configuration list for PBXProject "iOSCaelum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B35D6251B443E7D00D5052F /* Debug */,
+				5B35D6261B443E7D00D5052F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B35D6271B443E7D00D5052F /* Build configuration list for PBXNativeTarget "iOSCaelum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B35D6281B443E7D00D5052F /* Debug */,
+				5B35D6291B443E7D00D5052F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5B35D62A1B443E7D00D5052F /* Build configuration list for PBXNativeTarget "iOSCaelumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B35D62B1B443E7D00D5052F /* Debug */,
+				5B35D62C1B443E7D00D5052F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B35D60B1B443E7D00D5052F /* iOSCaelum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B35D60C1B443E7D00D5052F /* iOSCaelum.xcdatamodel */,
+			);
+			currentVersion = 5B35D60C1B443E7D00D5052F /* iOSCaelum.xcdatamodel */;
+			path = iOSCaelum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5B35D5F91B443E7D00D5052F /* Project object */;
+}
