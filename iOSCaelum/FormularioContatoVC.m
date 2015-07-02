@@ -32,7 +32,16 @@
     contato.email = self.campoEmail.text;
     contato.endereco = self.campoEndereco.text;
     contato.site = self.campoSite.text;
-    NSLog(@"\nDados: %@", contato);
+    [self.dao adicionaContato:contato];
+}
+
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.dao = [ContatoDao contatoDaoInstance];
+        self.navigationItem.title = @"Cadastro";
+    }
+    return self;
 }
 
 @end
