@@ -10,11 +10,12 @@
 		5B35D6071B443E7D00D5052F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6061B443E7D00D5052F /* main.m */; };
 		5B35D60A1B443E7D00D5052F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6091B443E7D00D5052F /* AppDelegate.m */; };
 		5B35D60D1B443E7D00D5052F /* iOSCaelum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D60B1B443E7D00D5052F /* iOSCaelum.xcdatamodeld */; };
-		5B35D6101B443E7D00D5052F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D60F1B443E7D00D5052F /* ViewController.m */; };
+		5B35D6101B443E7D00D5052F /* FormularioContatoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D60F1B443E7D00D5052F /* FormularioContatoVC.m */; };
 		5B35D6131B443E7D00D5052F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6111B443E7D00D5052F /* Main.storyboard */; };
 		5B35D6151B443E7D00D5052F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6141B443E7D00D5052F /* Images.xcassets */; };
 		5B35D6181B443E7D00D5052F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6161B443E7D00D5052F /* LaunchScreen.xib */; };
 		5B35D6241B443E7D00D5052F /* iOSCaelumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */; };
+		5BAB609A1B44BAF800257811 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB60991B44BAF800257811 /* Contato.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,16 @@
 		5B35D6081B443E7D00D5052F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B35D6091B443E7D00D5052F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5B35D60C1B443E7D00D5052F /* iOSCaelum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSCaelum.xcdatamodel; sourceTree = "<group>"; };
-		5B35D60E1B443E7D00D5052F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5B35D60F1B443E7D00D5052F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B35D60E1B443E7D00D5052F /* FormularioContatoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoVC.h; sourceTree = "<group>"; };
+		5B35D60F1B443E7D00D5052F /* FormularioContatoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormularioContatoVC.m; sourceTree = "<group>"; };
 		5B35D6121B443E7D00D5052F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B35D6141B443E7D00D5052F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5B35D6171B443E7D00D5052F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5B35D61D1B443E7D00D5052F /* iOSCaelumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSCaelumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B35D6221B443E7D00D5052F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSCaelumTests.m; sourceTree = "<group>"; };
+		5BAB60981B44BAF800257811 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = Model/Contato.h; sourceTree = "<group>"; };
+		5BAB60991B44BAF800257811 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = Model/Contato.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +88,11 @@
 			children = (
 				5B35D6081B443E7D00D5052F /* AppDelegate.h */,
 				5B35D6091B443E7D00D5052F /* AppDelegate.m */,
-				5B35D60E1B443E7D00D5052F /* ViewController.h */,
-				5B35D60F1B443E7D00D5052F /* ViewController.m */,
+				5B35D60E1B443E7D00D5052F /* FormularioContatoVC.h */,
+				5B35D60F1B443E7D00D5052F /* FormularioContatoVC.m */,
 				5B35D6111B443E7D00D5052F /* Main.storyboard */,
+				5BAB60981B44BAF800257811 /* Contato.h */,
+				5BAB60991B44BAF800257811 /* Contato.m */,
 				5B35D6141B443E7D00D5052F /* Images.xcassets */,
 				5B35D6161B443E7D00D5052F /* LaunchScreen.xib */,
 				5B35D60B1B443E7D00D5052F /* iOSCaelum.xcdatamodeld */,
@@ -222,9 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAB609A1B44BAF800257811 /* Contato.m in Sources */,
 				5B35D60A1B443E7D00D5052F /* AppDelegate.m in Sources */,
 				5B35D60D1B443E7D00D5052F /* iOSCaelum.xcdatamodeld in Sources */,
-				5B35D6101B443E7D00D5052F /* ViewController.m in Sources */,
+				5B35D6101B443E7D00D5052F /* FormularioContatoVC.m in Sources */,
 				5B35D6071B443E7D00D5052F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +428,7 @@
 				5B35D6291B443E7D00D5052F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B35D62A1B443E7D00D5052F /* Build configuration list for PBXNativeTarget "iOSCaelumTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				5B35D62C1B443E7D00D5052F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
