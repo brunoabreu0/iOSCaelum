@@ -18,8 +18,7 @@
 @property IBOutlet UITextField *campoSite;
 
 @property (strong) ContatoDao *dao;
-
-- (IBAction) pegaDadosDoFormulario;
+@property (strong) Contato *contato;
 
 @end
 

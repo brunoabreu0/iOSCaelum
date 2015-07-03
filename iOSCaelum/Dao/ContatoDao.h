@@ -15,5 +15,7 @@
 
 - (void) adicionaContato: (Contato *) contato;
 + (id) contatoDaoInstance;
+- (Contato *) buscaContatoDaPosicao:(NSInteger)posicao;
+- (void) removeContatoDaPosicao:(NSInteger)posicao;
 
 @end

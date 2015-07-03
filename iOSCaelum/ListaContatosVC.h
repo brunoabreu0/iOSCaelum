@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ContatoDao.h"
 
 @interface ListaContatosVC : UITableViewController
+
+@property ContatoDao *dao;
 
 @end
