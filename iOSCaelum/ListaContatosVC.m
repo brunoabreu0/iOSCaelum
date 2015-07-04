@@ -19,6 +19,7 @@
         self.navigationItem.rightBarButtonItem = botaoExibirFormulario;
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
         self.dao = [ContatoDao contatoDaoInstance];
+        self.linhaDestaque = -1;
     }
     return self;
 }
@@ -26,6 +27,10 @@
 - (void) exibeFormulario {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     FormularioContatoVC *form = [storyboard instantiateViewControllerWithIdentifier:@"FormContato"];
+    form.delegate = self;
+    if (self.contatoSelecionado) {
+        form.contato = self.contatoSelecionado;
+    }
     [self.navigationController pushViewController:form animated:YES];
 }
 
@@ -52,6 +57,33 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.dao removeContatoDaPosicao: indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.contatoSelecionado = [self.dao buscaContatoDaPosicao:indexPath.row];
+    [self exibeFormulario];
+    self.contatoSelecionado = nil;
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
+- (void)contatoAtualizado:(Contato *)contato {
+    self.linhaDestaque = [self.dao buscaPosicaoDoContato:contato];
+}
+
+- (void)contatoAdicionado:(Contato *)contato {
+    self.linhaDestaque = [self.dao buscaPosicaoDoContato:contato];
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    if(self.linhaDestaque >= 0) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.linhaDestaque inSection:0];
+        [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionNone animated:YES];
+        self.linhaDestaque = -1;
     }
 }
 

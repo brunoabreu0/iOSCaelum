@@ -16,8 +16,16 @@
 @implementation FormularioContatoVC
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    if(self.contato) {
+        self.navigationItem.title = @"Alterar";
+        UIBarButtonItem *confirmar = [[UIBarButtonItem alloc] initWithTitle:@"Confirmar" style:UIBarButtonItemStylePlain target:self action:@selector(atualizaContato)];
+        self.navigationItem.rightBarButtonItem = confirmar;
+        self.campoNome.text = self.contato.nome;
+        self.campoTelefone.text = self.contato.telefone;
+        self.campoEmail.text = self.contato.email;
+        self.campoEndereco.text = self.contato.endereco;
+        self.campoSite.text = self.contato.site;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +34,9 @@
 }
 
 - (void) pegaDadosDoFormulario {
-    self.contato = [Contato new];
+    if(!self.contato) {
+        self.contato = [Contato new];
+    }
     self.contato.nome = self.campoNome.text;
     self.contato.telefone = self.campoTelefone.text;
     self.contato.email = self.campoEmail.text;
@@ -48,7 +58,20 @@
 - (void) criaContato {
     [self pegaDadosDoFormulario];
     [self.dao adicionaContato: self.contato];
+    if(self.delegate) {
+        [self.delegate contatoAdicionado:self.contato];
+    }
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void) atualizaContato {
+    [self pegaDadosDoFormulario];
+    if(self.delegate) {
+        [self.delegate contatoAtualizado:self.contato];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 
 @end

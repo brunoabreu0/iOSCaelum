@@ -9,9 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "ContatoDao.h"
+#import "FormularioContatoVC.h"
 
-@interface ListaContatosVC : UITableViewController
+@interface ListaContatosVC : UITableViewController <FormularioContatoVCDelegate>
 
 @property ContatoDao *dao;
+@property Contato *contatoSelecionado;
+@property NSInteger linhaDestaque;
 
 @end

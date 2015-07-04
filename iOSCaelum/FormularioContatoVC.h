@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contato.h"
 #import "ContatoDao.h"
+
+@protocol FormularioContatoVCDelegate <NSObject>
+
+- (void) contatoAtualizado:(Contato *)contato;
+- (void) contatoAdicionado:(Contato *)contato;
+
+@end
 
 @interface FormularioContatoVC : UIViewController
 
@@ -19,6 +27,8 @@
 
 @property (strong) ContatoDao *dao;
 @property (strong) Contato *contato;
+
+@property (weak) id<FormularioContatoVCDelegate> delegate;
 
 @end
 
