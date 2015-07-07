@@ -87,4 +87,23 @@
     }
 }
 
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(exibeMaisAcoes:)];
+    [self.tableView addGestureRecognizer:longPress];
+}
+
+- (void) exibeMaisAcoes:(UIGestureRecognizer *)gesture {
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        CGPoint ponto = [gesture locationInView:self.tableView];
+        NSIndexPath *index = [self.tableView indexPathForRowAtPoint:ponto];
+        if(index){
+            self.contatoSelecionado = [self.dao buscaContatoDaPosicao:index.row];
+            _gerenciador = [[GerenciadorDeAcoes alloc] initWithContato: self.contatoSelecionado];
+            [self.gerenciador acoesDoController:self];
+        }
+    }
+}
+
 @end

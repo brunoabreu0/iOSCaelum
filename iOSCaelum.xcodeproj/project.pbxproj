@@ -18,6 +18,8 @@
 		5BAB609A1B44BAF800257811 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB60991B44BAF800257811 /* Contato.m */; };
 		F07F6D3C1B45DFF700F4D90E /* ContatoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F07F6D3B1B45DFF700F4D90E /* ContatoDao.m */; };
 		F07F6D3F1B45E36400F4D90E /* ListaContatosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F07F6D3E1B45E36400F4D90E /* ListaContatosVC.m */; };
+		F08CDEAF1B4B3DA200C2F937 /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = F08CDEAE1B4B3DA200C2F937 /* GerenciadorDeAcoes.m */; };
+		F08CDEB11B4B559B00C2F937 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08CDEB01B4B559B00C2F937 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		F07F6D3B1B45DFF700F4D90E /* ContatoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContatoDao.m; path = Dao/ContatoDao.m; sourceTree = "<group>"; };
 		F07F6D3D1B45E36400F4D90E /* ListaContatosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosVC.h; sourceTree = "<group>"; };
 		F07F6D3E1B45E36400F4D90E /* ListaContatosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaContatosVC.m; sourceTree = "<group>"; };
+		F08CDEAD1B4B3DA200C2F937 /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
+		F08CDEAE1B4B3DA200C2F937 /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
+		F08CDEB01B4B559B00C2F937 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08CDEB11B4B559B00C2F937 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,7 @@
 		5B35D5F81B443E7D00D5052F = {
 			isa = PBXGroup;
 			children = (
+				F08CDEB01B4B559B00C2F937 /* MessageUI.framework */,
 				5B35D6031B443E7D00D5052F /* iOSCaelum */,
 				5B35D6201B443E7D00D5052F /* iOSCaelumTests */,
 				5B35D6021B443E7D00D5052F /* Products */,
@@ -101,6 +108,8 @@
 				5BAB60991B44BAF800257811 /* Contato.m */,
 				F07F6D3D1B45E36400F4D90E /* ListaContatosVC.h */,
 				F07F6D3E1B45E36400F4D90E /* ListaContatosVC.m */,
+				F08CDEAD1B4B3DA200C2F937 /* GerenciadorDeAcoes.h */,
+				F08CDEAE1B4B3DA200C2F937 /* GerenciadorDeAcoes.m */,
 				5B35D6141B443E7D00D5052F /* Images.xcassets */,
 				5B35D6161B443E7D00D5052F /* LaunchScreen.xib */,
 				5B35D60B1B443E7D00D5052F /* iOSCaelum.xcdatamodeld */,
@@ -243,6 +252,7 @@
 				5B35D60D1B443E7D00D5052F /* iOSCaelum.xcdatamodeld in Sources */,
 				F07F6D3C1B45DFF700F4D90E /* ContatoDao.m in Sources */,
 				5B35D6101B443E7D00D5052F /* FormularioContatoVC.m in Sources */,
+				F08CDEAF1B4B3DA200C2F937 /* GerenciadorDeAcoes.m in Sources */,
 				5B35D6071B443E7D00D5052F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
