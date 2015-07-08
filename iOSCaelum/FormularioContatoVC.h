@@ -17,18 +17,21 @@
 
 @end
 
-@interface FormularioContatoVC : UIViewController
+@interface FormularioContatoVC : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate>
 
 @property IBOutlet UITextField *campoNome;
 @property IBOutlet UITextField *campoTelefone;
 @property IBOutlet UITextField *campoEmail;
 @property IBOutlet UITextField *campoEndereco;
 @property IBOutlet UITextField *campoSite;
+@property IBOutlet UIButton *campoFoto;
 
 @property (strong) ContatoDao *dao;
 @property (strong) Contato *contato;
 
 @property (weak) id<FormularioContatoVCDelegate> delegate;
+
+- (IBAction)selecionaFoto:(id)sender;
 
 @end
 

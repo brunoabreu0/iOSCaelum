@@ -25,6 +25,11 @@
         self.campoEmail.text = self.contato.email;
         self.campoEndereco.text = self.contato.endereco;
         self.campoSite.text = self.contato.site;
+        
+        if (self.contato.foto) {
+            [self.campoFoto setBackgroundImage:self.contato.foto forState:UIControlStateNormal];
+        }
+        
     }
 }
 
@@ -37,6 +42,11 @@
     if(!self.contato) {
         self.contato = [Contato new];
     }
+    
+    if ([self.campoFoto backgroundImageForState:UIControlStateNormal]) {
+        self.contato.foto = [self.campoFoto backgroundImageForState:UIControlStateNormal];
+    }
+    
     self.contato.nome = self.campoNome.text;
     self.contato.telefone = self.campoTelefone.text;
     self.contato.email = self.campoEmail.text;
@@ -70,6 +80,45 @@
         [self.delegate contatoAtualizado:self.contato];
     }
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)selecionaFoto:(id)sender {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Escolha a foto do contato" delegate:self cancelButtonTitle:@"Cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Tirar foto",@"Escolher da biblioteca", nil];
+        [sheet showInView:self.view];
+    } else {
+        UIImagePickerController *picker = [UIImagePickerController new];
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        picker.allowsEditing = YES;
+        picker.delegate = self;
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+}
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *imagemSelecionada = [info valueForKey:UIImagePickerControllerEditedImage];
+    [self.campoFoto setBackgroundImage:imagemSelecionada forState:UIControlStateNormal];
+    [self.campoFoto setTitle:nil forState:UIControlStateNormal];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    UIImagePickerController *picker = [UIImagePickerController new];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    
+    switch (buttonIndex) {
+        case 0:
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            break;
+        case 1:
+            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            break;
+        default:
+            return;
+    }
+    
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 
