@@ -7,6 +7,7 @@
 //
 
 #import "ContatosNoMapaVC.h"
+#import "ContatoDao.h"
 
 @interface ContatosNoMapaVC ()
 
@@ -44,8 +45,17 @@
         UITabBarItem *tabItem = [[UITabBarItem alloc] initWithTitle:@"Mapa" image:imagemTabItem tag:0];
         self.tabBarItem = tabItem;
         self.navigationItem.title = @"Localização";
+        ContatoDao *dao = [ContatoDao contatoDaoInstance];
+        self.contatos = dao.contatos;
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.mapa addAnnotations:self.contatos];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.mapa removeAnnotations:self.contatos];
 }
 
 @end
