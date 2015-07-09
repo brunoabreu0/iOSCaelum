@@ -27,8 +27,10 @@
     
     ContatosNoMapaVC *contatosMapa = [ContatosNoMapaVC new];
     
+    UINavigationController *navMapa = [[UINavigationController alloc] initWithRootViewController:contatosMapa];
+    
     UITabBarController *tabBarController = [UITabBarController new];
-    tabBarController.viewControllers = @[nav, contatosMapa];
+    tabBarController.viewControllers = @[nav, navMapa];
     
     self.window.rootViewController = tabBarController;
     
