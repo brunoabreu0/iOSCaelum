@@ -25,6 +25,8 @@
         self.campoEmail.text = self.contato.email;
         self.campoEndereco.text = self.contato.endereco;
         self.campoSite.text = self.contato.site;
+        self.campoLatitude.text = [self.contato.latitude stringValue];
+        self.campoLongitude.text = [self.contato.longitude stringValue];
         
         if (self.contato.foto) {
             [self.campoFoto setBackgroundImage:self.contato.foto forState:UIControlStateNormal];
@@ -52,6 +54,8 @@
     self.contato.email = self.campoEmail.text;
     self.contato.endereco = self.campoEndereco.text;
     self.contato.site = self.campoSite.text;
+    self.contato.latitude = [NSNumber numberWithFloat: [self.campoLatitude.text floatValue]];
+    self.contato.longitude = [NSNumber numberWithFloat: [self.campoLongitude.text floatValue]];
 }
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
@@ -121,6 +125,17 @@
     [self presentViewController:picker animated:YES completion:nil];
 }
 
+- (IBAction)buscarCoordenadas:(UIButton *)botao {
+    CLGeocoder *geocoder = [CLGeocoder new];
+    [geocoder geocodeAddressString:self.campoEndereco.text completionHandler:^(NSArray *resultados, NSError *error) {
+        if (error == nil && [resultados count] > 0) {
+            CLPlacemark *resultado = resultados[0];
+            CLLocationCoordinate2D coordenada = resultado.location.coordinate;
+            self.campoLatitude.text = [NSString stringWithFormat:@"%f",coordenada.latitude];
+            self.campoLongitude.text = [NSString stringWithFormat:@"%f",coordenada.longitude];
+        }
+    }];
+}
 
 
 @end

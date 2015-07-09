@@ -11,11 +11,13 @@
 
 @interface Contato : NSObject
 
-@property NSString *nome;
-@property NSString *telefone;
-@property NSString *email;
-@property NSString *endereco;
-@property NSString *site;
+@property (strong) NSString *nome;
+@property (strong) NSString *telefone;
+@property (strong) NSString *email;
+@property (strong) NSString *endereco;
+@property (strong) NSString *site;
 @property (strong) UIImage *foto;
+@property (strong) NSNumber *latitude;
+@property (strong) NSNumber *longitude;
 
 @end
