@@ -16,6 +16,10 @@
 		5B35D6181B443E7D00D5052F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B35D6161B443E7D00D5052F /* LaunchScreen.xib */; };
 		5B35D6241B443E7D00D5052F /* iOSCaelumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */; };
 		5BAB609A1B44BAF800257811 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB60991B44BAF800257811 /* Contato.m */; };
+		F010D2CD1B4DE8470063FC17 /* ContatosNoMapaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F010D2CB1B4DE8470063FC17 /* ContatosNoMapaVC.m */; };
+		F010D2CE1B4DE8470063FC17 /* ContatosNoMapaVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F010D2CC1B4DE8470063FC17 /* ContatosNoMapaVC.xib */; };
+		F010D2D01B4DE88B0063FC17 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F010D2CF1B4DE88B0063FC17 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F010D2D11B4DEACB0063FC17 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F010D2CF1B4DE88B0063FC17 /* MapKit.framework */; };
 		F07F6D3C1B45DFF700F4D90E /* ContatoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F07F6D3B1B45DFF700F4D90E /* ContatoDao.m */; };
 		F07F6D3F1B45E36400F4D90E /* ListaContatosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F07F6D3E1B45E36400F4D90E /* ListaContatosVC.m */; };
 		F08CDEAF1B4B3DA200C2F937 /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = F08CDEAE1B4B3DA200C2F937 /* GerenciadorDeAcoes.m */; };
@@ -49,6 +53,10 @@
 		5B35D6231B443E7D00D5052F /* iOSCaelumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSCaelumTests.m; sourceTree = "<group>"; };
 		5BAB60981B44BAF800257811 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = Model/Contato.h; sourceTree = "<group>"; };
 		5BAB60991B44BAF800257811 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = Model/Contato.m; sourceTree = "<group>"; };
+		F010D2CA1B4DE8470063FC17 /* ContatosNoMapaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatosNoMapaVC.h; sourceTree = "<group>"; };
+		F010D2CB1B4DE8470063FC17 /* ContatosNoMapaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatosNoMapaVC.m; sourceTree = "<group>"; };
+		F010D2CC1B4DE8470063FC17 /* ContatosNoMapaVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContatosNoMapaVC.xib; sourceTree = "<group>"; };
+		F010D2CF1B4DE88B0063FC17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F07F6D3A1B45DFF700F4D90E /* ContatoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContatoDao.h; path = Dao/ContatoDao.h; sourceTree = "<group>"; };
 		F07F6D3B1B45DFF700F4D90E /* ContatoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContatoDao.m; path = Dao/ContatoDao.m; sourceTree = "<group>"; };
 		F07F6D3D1B45E36400F4D90E /* ListaContatosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaContatosVC.h; sourceTree = "<group>"; };
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F010D2D11B4DEACB0063FC17 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F010D2D01B4DE88B0063FC17 /* MapKit.framework in Frameworks */,
 				F08CDEB11B4B559B00C2F937 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +90,7 @@
 		5B35D5F81B443E7D00D5052F = {
 			isa = PBXGroup;
 			children = (
+				F010D2CF1B4DE88B0063FC17 /* MapKit.framework */,
 				F08CDEB01B4B559B00C2F937 /* MessageUI.framework */,
 				5B35D6031B443E7D00D5052F /* iOSCaelum */,
 				5B35D6201B443E7D00D5052F /* iOSCaelumTests */,
@@ -106,6 +117,9 @@
 				5B35D6111B443E7D00D5052F /* Main.storyboard */,
 				5BAB60981B44BAF800257811 /* Contato.h */,
 				5BAB60991B44BAF800257811 /* Contato.m */,
+				F010D2CA1B4DE8470063FC17 /* ContatosNoMapaVC.h */,
+				F010D2CB1B4DE8470063FC17 /* ContatosNoMapaVC.m */,
+				F010D2CC1B4DE8470063FC17 /* ContatosNoMapaVC.xib */,
 				F07F6D3D1B45E36400F4D90E /* ListaContatosVC.h */,
 				F07F6D3E1B45E36400F4D90E /* ListaContatosVC.m */,
 				F08CDEAD1B4B3DA200C2F937 /* GerenciadorDeAcoes.h */,
@@ -195,6 +209,11 @@
 				TargetAttributes = {
 					5B35D6001B443E7D00D5052F = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					5B35D61C1B443E7D00D5052F = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -227,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B35D6131B443E7D00D5052F /* Main.storyboard in Resources */,
+				F010D2CE1B4DE8470063FC17 /* ContatosNoMapaVC.xib in Resources */,
 				5B35D6181B443E7D00D5052F /* LaunchScreen.xib in Resources */,
 				5B35D6151B443E7D00D5052F /* Images.xcassets in Resources */,
 			);
@@ -246,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F010D2CD1B4DE8470063FC17 /* ContatosNoMapaVC.m in Sources */,
 				5BAB609A1B44BAF800257811 /* Contato.m in Sources */,
 				F07F6D3F1B45E36400F4D90E /* ListaContatosVC.m in Sources */,
 				5B35D60A1B443E7D00D5052F /* AppDelegate.m in Sources */,
@@ -331,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

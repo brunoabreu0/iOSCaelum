@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ListaContatosVC.h"
+#import "ContatosNoMapaVC.h"
 
 @interface AppDelegate ()
 
@@ -17,13 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     ListaContatosVC *lista = [ListaContatosVC new];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:lista];
     
-    self.window.rootViewController = nav;
+    ContatosNoMapaVC *contatosMapa = [ContatosNoMapaVC new];
+    
+    UITabBarController *tabBarController = [UITabBarController new];
+    tabBarController.viewControllers = @[nav, contatosMapa];
+    
+    self.window.rootViewController = tabBarController;
     
     [self.window makeKeyAndVisible];
     return YES;
