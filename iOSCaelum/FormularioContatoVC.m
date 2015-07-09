@@ -126,6 +126,8 @@
 }
 
 - (IBAction)buscarCoordenadas:(UIButton *)botao {
+    [self.loading startAnimating];
+    botao.hidden = YES;
     CLGeocoder *geocoder = [CLGeocoder new];
     [geocoder geocodeAddressString:self.campoEndereco.text completionHandler:^(NSArray *resultados, NSError *error) {
         if (error == nil && [resultados count] > 0) {
@@ -133,7 +135,11 @@
             CLLocationCoordinate2D coordenada = resultado.location.coordinate;
             self.campoLatitude.text = [NSString stringWithFormat:@"%f",coordenada.latitude];
             self.campoLongitude.text = [NSString stringWithFormat:@"%f",coordenada.longitude];
+        } else {
+            NSLog(@"Erro: %@ Resultados: %@", error, resultados);
         }
+        [self.loading stopAnimating];
+        botao.hidden = NO;
     }];
 }
 

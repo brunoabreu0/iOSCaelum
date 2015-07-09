@@ -111,6 +111,9 @@
                                     <action selector="buscarCoordenadas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3F-Cf-o1F"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ym5-O9-upO">
+                                <rect key="frame" x="256" y="165" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -125,6 +128,7 @@
                         <outlet property="campoNome" destination="1vz-NF-5cL" id="MnS-af-LAK"/>
                         <outlet property="campoSite" destination="Urt-3z-EGm" id="Wfg-0G-xpK"/>
                         <outlet property="campoTelefone" destination="C6z-zA-1Uw" id="Ctc-Al-PkT"/>
+                        <outlet property="loading" destination="Ym5-O9-upO" id="CrA-xt-yim"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

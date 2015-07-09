@@ -28,6 +28,7 @@
 @property IBOutlet UIButton *campoFoto;
 @property IBOutlet UITextField *campoLatitude;
 @property IBOutlet UITextField *campoLongitude;
+@property IBOutlet UIActivityIndicatorView *loading;
 
 @property (strong) ContatoDao *dao;
 @property (strong) Contato *contato;
