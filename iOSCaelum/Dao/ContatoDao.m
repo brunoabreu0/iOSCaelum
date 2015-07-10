@@ -21,6 +21,8 @@ static ContatoDao *defaultDao = nil;
     self = [super init];
     if (self) {
         _contatos = [NSMutableArray new];
+        [self inserirDados];
+        [self carregarContatos];
     }
     return self;
 }
@@ -122,6 +124,32 @@ static ContatoDao *defaultDao = nil;
             abort();
         }
     }
+}
+
+- (void) inserirDados {
+    NSUserDefaults *configuracoes = [NSUserDefaults standardUserDefaults];
+    BOOL dadosInseridos = [configuracoes boolForKey:@"dados_inseridos"];
+    if (!dadosInseridos) {
+        Contato *caelumSP = [NSEntityDescription insertNewObjectForEntityForName:@"Contato" inManagedObjectContext:self.managedObjectContext];
+        caelumSP.nome = @"Caelum Unidade São Paulo";
+        caelumSP.email = @"contato@caelum.com.br";
+        caelumSP.endereco = @"São Paulo, SP, Rua Vergueiro, 3185";
+        caelumSP.telefone = @"1155712751";
+        caelumSP.site = @"http://www.caelum.com.br";
+        caelumSP.latitude = [NSNumber numberWithDouble:-23.5883034];
+        caelumSP.longitude = [NSNumber numberWithDouble:-46.6323690];
+        [self saveContext];
+        [configuracoes setBool:YES forKey:@"dados_inseridos"];
+        [configuracoes synchronize];
+    }
+}
+
+- (void) carregarContatos {
+    NSFetchRequest *buscaContatos = [NSFetchRequest fetchRequestWithEntityName:@"Contato"];
+    NSSortDescriptor *ordenarPorNome = [NSSortDescriptor sortDescriptorWithKey:@"nome" ascending:YES];
+    buscaContatos.sortDescriptors = @[ordenarPorNome];
+    NSArray *contatosImutaveis = [self.managedObjectContext executeFetchRequest:buscaContatos error:nil];
+    _contatos = [contatosImutaveis mutableCopy];
 }
 
 @end

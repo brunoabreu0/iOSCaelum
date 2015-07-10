@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContatoDao.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ContatoDao *dao;
 
 @end
 

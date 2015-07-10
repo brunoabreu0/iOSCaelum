@@ -21,6 +21,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    self.dao = [ContatoDao contatoDaoInstance];
+    
     ListaContatosVC *lista = [ListaContatosVC new];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:lista];
