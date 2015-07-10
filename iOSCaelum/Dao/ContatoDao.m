@@ -152,4 +152,8 @@ static ContatoDao *defaultDao = nil;
     _contatos = [contatosImutaveis mutableCopy];
 }
 
+- (Contato *) novoContato {
+    return [NSEntityDescription insertNewObjectForEntityForName:@"Contato" inManagedObjectContext:self.managedObjectContext];
+}
+
 @end

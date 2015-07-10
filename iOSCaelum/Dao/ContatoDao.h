@@ -26,5 +26,6 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (Contato *)novoContato;
 
 @end
